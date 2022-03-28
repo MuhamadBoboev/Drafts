@@ -1,6 +1,7 @@
 .header{
   display: flex;
   justify-content: space-between;
+  background-color: red;
 }
 .header__flex{
   display: flex;
@@ -15,7 +16,7 @@
     justify-content: center;
     text-align: center;
     padding: 34px;
-
+	border: 2px solid red;
 
   }
   img:hover{
