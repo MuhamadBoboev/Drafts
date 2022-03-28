@@ -1,0 +1,113 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.header__flex{
+  display: flex;
+  justify-content: space-between;
+
+}
+.header__svg{
+
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 34px;
+
+
+  }
+  img:hover{
+    display: flex;
+
+  }
+  a:hover{
+    position: relative;
+    animation-name: headerSVG;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+  @keyframes headerSVG {
+    0%{
+      transform:translateY(0px);
+
+    }
+    50%{
+    }
+    100%{
+      transform: translateY(-20px);
+    }
+  }
+}
+
+.header__nav{
+  display: flex;
+  align-items: center;
+
+
+
+  .header__link:not(:last-child){
+    margin-right: 50px;
+  }
+}
+.header__link{
+  .header__ahref{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    padding: 32.5px 0px 32.5px 0px;
+    background-color: aqua;
+  }
+  .header__ahref:hover::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+  }
+}
+.header__nav_left{
+  margin-left: 132px;
+
+}
+.header__nav_right{
+  margin-right: 132px;
+
+}
+.header__logo{
+  display: flex;
+  align-items: center;
+  padding: 0px 20px 0px ;
+  background-color: aquamarine;
+
+}
+.header__logo{
+  img:hover{
+    border-radius: 50%;
+    animation-name : headerLogo;
+
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+  }
+}
+@keyframes headerLogo{
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
