@@ -1,7 +1,8 @@
 .header{
   display: flex;
   justify-content: space-between;
-  background-color: red;
+  border-bottom: 1px solid $colorHeaderBorder;
+  padding-bottom: -1px;
 }
 .header__flex{
   display: flex;
@@ -16,8 +17,7 @@
     justify-content: center;
     text-align: center;
     padding: 34px;
-	border: 2px solid red;
-
+	
   }
   img:hover{
     display: flex;
@@ -43,7 +43,9 @@
     }
   }
 }
-
+.header__svg_map{
+	
+}
 .header__nav{
   display: flex;
   align-items: center;
