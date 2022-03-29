@@ -17,7 +17,7 @@
     justify-content: center;
     text-align: center;
     padding: 34px;
-	
+
   }
   img:hover{
     display: flex;
@@ -44,12 +44,14 @@
   }
 }
 .header__svg_map{
-	
+  border-right: 1px solid $colorHeaderBorder ;
+}
+.header__svg_phone{
+  border-left: 1px solid $colorHeaderBorder;
 }
 .header__nav{
   display: flex;
   align-items: center;
-
 
 
   .header__link:not(:last-child){
@@ -73,7 +75,7 @@
     width: 100%;
     bottom: 0;
     left: 0;
-    background-color: red;
+    background-color: $colorBlack;
   }
 }
 .header__nav_left{
@@ -103,6 +105,14 @@
 
   }
 }
+.burger{
+  display: none;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+
+}
 @keyframes headerLogo{
   0%{
     transform: rotate(0deg);
@@ -112,5 +122,18 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width:1092px) {
+  body{
+    background-color: red;
+  }
+  .header>div:not(:first-child){
+    display: none;
+  }
+  .burger{
+    display: block;
+    background-color: aqua;
   }
 }

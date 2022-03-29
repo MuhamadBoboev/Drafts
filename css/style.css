@@ -107,6 +107,14 @@ body {
   }
 }
 
+.header__svg_map {
+  border-right: 1px solid #EBEBEB;
+}
+
+.header__svg_phone {
+  border-left: 1px solid #EBEBEB;
+}
+
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,7 +147,7 @@ body {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: red;
+  background-color: black;
 }
 
 .header__nav_left {
@@ -173,6 +181,14 @@ body {
           animation-timing-function: linear;
 }
 
+.burger {
+  display: none;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+
 @-webkit-keyframes headerLogo {
   0% {
     -webkit-transform: rotate(0deg);
@@ -192,5 +208,19 @@ body {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+@media (max-width: 1092px) {
+  body {
+    background-color: red;
+  }
+
+  .header > div:not(:first-child) {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    background-color: aqua;
   }
 }
