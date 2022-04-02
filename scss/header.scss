@@ -67,6 +67,7 @@
     align-items: center;
     padding: 32.5px 0px 32.5px 0px;
     background-color: aqua;
+    z-index: 55;
   }
   .header__ahref:hover::before{
     content: "";
@@ -77,6 +78,26 @@
     left: 0;
     background-color: $colorBlack;
   }
+
+}
+.classs{
+  display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    padding: 32.5px 0px 32.5px 0px;
+    background-color: aqua;
+
+    .header__ahref__1:hover:before{
+      content: "";
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: $colorGreen;
+    }
 }
 .header__nav_left{
   margin-left: 132px;
@@ -105,13 +126,20 @@
 
   }
 }
-.burger{
+.header{
+}
+.navbar{
   display: none;
   position: relative;
   width: 200px;
   height: 200px;
   background-color: aqua;
 
+}
+@media (max-width:1092px){
+  .navbar{
+    display: block;
+  }
 }
 @keyframes headerLogo{
   0%{
