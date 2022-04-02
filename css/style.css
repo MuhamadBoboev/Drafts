@@ -306,15 +306,41 @@ body {
   font-weight: 800;
   position: relative;
 }
+.main-nav__button:hover .main-nav__block-hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 .main-nav__block-hover {
-  padding: 20px;
   height: 100vh;
   width: 100%;
   left: 0;
   bottom: 0;
-  text-align: end;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   position: absolute;
   z-index: 3;
-  background-color: red;
+  background-color: #EB5757;
+}
+.main-nav__block-hover p {
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 14;
+  line-height: 140%;
+  font-family: "Montserrat";
+}
+.main-nav__block-hover p:not(:nth-child(2)) {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 120%;
 }

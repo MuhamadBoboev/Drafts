@@ -19,6 +19,11 @@
   font-weight: 800;
   position: relative;
 
+  &:hover{
+    .main-nav__block-hover{
+      display: flex;
+    }
+  }
   // &:hover::before{
   //   position: absolute;
   //   z-index: -5;
@@ -42,16 +47,33 @@
 
 }
 .main-nav__block-hover{
-  padding: 20px;
   height: 100vh;
   width: 100%;
   left: 0;
   bottom: 0;
-  text-align: end;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
 
   position: absolute;
 
   z-index: 3;
-  background-color: red;
+  background-color: $colorBlockRed;
+  p{
+    padding-bottom: 16px;
+    font-weight: 400;
+    font-size: 14;
+    line-height: 140%;
+    font-family: 'Montserrat' ;
 
+  }
+  p:not(:nth-child(2)) {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 120%;
+
+  }
 }
