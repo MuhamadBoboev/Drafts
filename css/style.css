@@ -302,7 +302,9 @@ body {
   padding: 30px 91px;
   background-color: transparent;
   color: white;
-  border: 1px solid #EBEBEB;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 0px;
+  border-right: 0px;
   font-weight: 800;
   position: relative;
 }
@@ -328,6 +330,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-bottom: 40px;
   position: absolute;
   z-index: 3;
   background-color: #EB5757;
